@@ -56,7 +56,7 @@ DNS="10.42.0.1"
 INTERFACE="ens18"
 DOCKER_DATA_ROOT="/home/docker"
 
-# SSH public keys (the hypervisor host + workstation)
+# SSH public keys (hypervisor + workstation)
 HYPERVISOR_PUBKEY="ssh-rsa AAAA...REPLACE_WITH_YOUR_PUBKEY... user@host"
 WORKSTATION_PUBKEY="ssh-ed25519 AAAA...REPLACE_WITH_YOUR_PUBKEY... user@host"
 

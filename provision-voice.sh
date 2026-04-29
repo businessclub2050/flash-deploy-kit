@@ -63,7 +63,7 @@ LANGGRAPH_API="http://10.42.0.102:8000"
 PIPER_PORT=5500
 VOICE_SERVER_PORT=8443
 
-# SSH public keys (the hypervisor host + workstation)
+# SSH public keys (hypervisor + workstation)
 HYPERVISOR_PUBKEY="ssh-rsa AAAA...REPLACE_WITH_YOUR_PUBKEY... user@host"
 WORKSTATION_PUBKEY="ssh-ed25519 AAAA...REPLACE_WITH_YOUR_PUBKEY... user@host"
 

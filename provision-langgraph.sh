@@ -53,7 +53,7 @@ OLLAMA_ENDPOINT="http://10.42.0.100:11434"
 OLLAMA_MODEL="qwen2.5:14b"
 LANGGRAPH_DIR="/opt/langgraph"
 
-# SSH public keys (the hypervisor host + workstation)
+# SSH public keys (hypervisor + workstation)
 HYPERVISOR_PUBKEY="ssh-rsa AAAA...REPLACE_WITH_YOUR_PUBKEY... user@host"
 WORKSTATION_PUBKEY="ssh-ed25519 AAAA...REPLACE_WITH_YOUR_PUBKEY... user@host"
 

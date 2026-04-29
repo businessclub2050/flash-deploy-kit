@@ -3,7 +3,7 @@
 # Sovereign AI Node — Proxmox Cloud-Init VM Creator
 # Zero-touch: downloads Debian 13 cloud image → creates VM → cloud-init → runs install.sh
 #
-# Run this ON THE PROXMOX HOST (e.g., the hypervisor HYPERVISOR_IP).
+# Run this ON THE PROXMOX HOST the hypervisor.
 #
 # USAGE:
 #   ./create-node.sh sovereign-node.env              # Full pipeline
@@ -203,7 +203,7 @@ configure_cloudinit() {
     if [ -n "${SSH_AUTHORIZED_KEYS:-}" ]; then
         echo "${SSH_AUTHORIZED_KEYS}" > "${ssh_keys_file}"
     fi
-    # Always add the hypervisor host key if it exists
+    # Always add hypervisor key if it exists
     if [ -f /root/.ssh/id_rsa.pub ]; then
         cat /root/.ssh/id_rsa.pub >> "${ssh_keys_file}"
     fi
